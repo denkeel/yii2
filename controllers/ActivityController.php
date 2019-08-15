@@ -1,13 +1,14 @@
 <?php
 
 namespace app\controllers;
-use app\models\Event;
+
+use app\models\Activity;
 use yii\web\Controller;
-class EventController extends Controller
+class ActivityController extends Controller
 {
     public function actionView()
     {
-        $model = new Event();
+        $model = new Activity() ;
         $model->id = 5;
         $model->title = 'Совещание';
         $model->body = 'Обсуждение проблем изменения климата 2019';

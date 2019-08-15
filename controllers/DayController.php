@@ -9,7 +9,7 @@ class DayController extends Controller
     {
         $model = new Day();
         $model->id = 5;
-        $model->event_id = 9;
+        $model->activity_id = 9;
         $model->work = true;
 
         return $this->render('view', ['model'=>$model]);

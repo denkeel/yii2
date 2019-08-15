@@ -2,7 +2,7 @@
 
 namespace app\models;
 use yii\base\Model;
-class Event extends Model
+class Activity extends Model
 {
     public $id;
     public $title;

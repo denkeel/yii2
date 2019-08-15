@@ -6,13 +6,13 @@ class Day extends Model
 {
     public $id;
     public $work;
-    public $event_id;
+    public $activity_id;
     public function attributeLabels()
     {
         return [
             'id'=>'ID',
             'work' => 'Рабочий день',
-            'event_id' => 'ID события',
+            'activity_id' => 'ID события',
         ];
     }
 }
