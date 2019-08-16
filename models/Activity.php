@@ -1,7 +1,9 @@
 <?php
 
 namespace app\models;
+
 use yii\base\Model;
+
 class Activity extends Model
 {
     public $id;
@@ -15,14 +17,20 @@ class Activity extends Model
     public function attributeLabels()
     {
         return [
-            'id'=>'ID',
-            'title'=>'Название',
-            'body'=>'Описание события',
-            'start_date'=>'Дата начала',
-            'end_date'=>'Дата окончания',
-            'author_id'=>'ID автора',
-            'cycle'=>'Повторяется',
-            'main'=>'Главное',
+            'id' => 'ID',
+            'title' => 'Название',
+            'body' => 'Описание события',
+            'start_date' => 'Дата начала',
+            'end_date' => 'Дата окончания',
+            'author_id' => 'ID автора',
+            'cycle' => 'Повторяется',
+            'main' => 'Главное',
+        ];
+    }
+    public function rules()
+    {
+        return [
+            [['title', 'start_date'], 'required'],
         ];
     }
 }
